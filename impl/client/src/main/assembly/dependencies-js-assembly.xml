@@ -132,6 +132,14 @@
     </fileSet>
     <!-- endregion Angular -->
 
+    <fileSet>
+      <directory>${webjars.target.directory}/bootstrap/${bootstrap.version}/dist/js</directory>
+      <outputDirectory>bootstrap</outputDirectory>
+      <excludes>
+        <exclude>npm.js</exclude>
+      </excludes>
+    </fileSet>
+
   </fileSets>
 
   <files>
@@ -143,14 +151,6 @@
       <outputDirectory>jquery</outputDirectory>
     </file>
 
-    <file>
-      <source>${webjars.target.directory}/bootstrap/${bootstrap.version}/dist/js/bootstrap.js</source>
-      <outputDirectory>bootstrap</outputDirectory>
-    </file>
   </files>
-
-  <dependencySets>
-
-  </dependencySets>
 
 </assembly>
